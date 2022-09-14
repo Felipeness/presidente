@@ -80,9 +80,21 @@
         padding: 20px;
         color: var(--dark-text-color);
     }
-
+    @media (max-height: 900px){
+    .urna-tela{
+        width: 100%;
+        height: 100%;
+        background-color: var(--ballot-box-screen-color);
+        border-radius: 5px;
+        border: 2px solid var(--light-border-color);
+        padding: 20px;
+        color: var(--dark-text-color);
+        display: flex;
+    }
+    }
     .urna-tela-voto-titulo{
         font-size: 20px;
+        /* font-size: clamp(1em, 1em + 1vw, 1.5em); */
     }
 
     .urna-tela-voto {
@@ -97,7 +109,7 @@
     }
 
     .urna-tela-voto-tipo{
-        font-size: 30px;
+        font-size:  30px;
         font-weight: bold;
         margin: 20px 0;
         text-transform: uppercase;
@@ -135,6 +147,18 @@
         font-size: 13px;
         margin-top: 20px;
         padding-top: 10px;
+    }
+    @media (max-height: 900px){
+    .urna-tela-voto-instrucoes{
+        width: 100%;
+        height: 20%;
+        border-top: 1px solid var(--dark-border-color);
+        font-size: 13px;
+        margin-top: 20px;
+        padding-top: 10px;
+        display: flex;
+        flex-flow: row wrap;
+    }
     }
 
     .urna-tela-fim p{

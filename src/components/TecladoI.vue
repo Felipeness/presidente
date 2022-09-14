@@ -65,9 +65,21 @@
         flex-direction: column;
         justify-content: space-around;
     }
-
+    @media (max-width: 500px){
+    .urna-teclado{
+        width: 100%;
+        height: 100%;
+        background-color: var(--ballot-box-keyboard-color);
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    }
     .urna-teclado-numerico{
         width: 100%;
+
     }
 
     .urna-teclado-numerico-linha{
@@ -91,12 +103,34 @@
         justify-content: space-around;
     }
 
+    @media (max-height: 900px){
+    .urna-teclado-acoes{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    }
+
     .urna-teclado-acoes button{
         color: var(--dark-text-color);
         font-size: 15px;
         border-radius: 5px;
         width: 30%;
         height: 50px;
+    }
+
+    @media (max-height: 900px){
+    .urna-teclado-acoes button{
+        color: var(--dark-text-color);
+        font-size: 13px;
+        border-radius: 5px;
+        width: 32%;
+        height: 50px;
+        /* display: flex;
+        align-items: center;
+        justify-content: space-between; */
+    }
     }
 
     .btn-branco{
