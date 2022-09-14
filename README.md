@@ -1,4 +1,4 @@
-# wdev-urna
+# urna
 
 ## Project setup
 ```
