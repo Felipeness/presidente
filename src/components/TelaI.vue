@@ -170,4 +170,15 @@
         height: 100%;
     }
 
+    @media (max-height: 900px) {
+    .urna-tela-fim {
+        display: flex;
+        align-items: center;
+        font-size: 120px;
+        width: 100%;
+        height: 100%;
+    }
+
+    }
+
 </style>
